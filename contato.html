@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contato {
+      max-width: 600px;
+      background: white;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contato h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contato label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .contato input,
+    .contato textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .contato button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contato button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+        <div class="logo">
+            <h1><span class="branco">Blog</span>Viagem</h1>
+        </div>
+        <nav class="menu">
+            <a href="home.html">Pagina Inicial</a>
+            <a href="praias.html">Praias</a>
+            <a href="montanhas.html">Montanhas</a>
+            <a href="festivais.html">Festivais</a>
+            Contato
+        </nav>
+    </div>
+<section class="contato" id="contato">
+  <h2>Fale Conosco</h2>
+  <form action="mailto:seuemail@exemplo.com" method="POST" enctype="text/plain">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="Nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="Mensagem" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+</body>
+</html>
